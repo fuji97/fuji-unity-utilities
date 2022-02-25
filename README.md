@@ -8,16 +8,20 @@
 Fuji's Unity Utilities
 
 - [Fuji's Unity Utilities](#fujis-unity-utilities)
+  - [Dependencies](#dependencies)
   - [How to use](#how-to-use)
   - [Install](#install)
     - [via npm](#via-npm)
     - [via OpenUPM](#via-openupm)
     - [via Git URL](#via-git-url)
-    - [Tests](#tests)
   - [Configuration](#configuration)
   - [License](#license)
 
 <!-- toc -->
+
+## Dependencies
+- [Cysharp/UniTask](https://github.com/Cysharp/UniTask)
+- [Demigiant/dotween](https://github.com/Demigiant/dotween)
 
 ## How to use
 
@@ -60,22 +64,10 @@ Open `Packages/manifest.json` with your favorite text editor. Add following line
 ```json
 {
   "dependencies": {
-    "com.fuji97.fuji-unity-utilities": "https://github.com/fuji97/fuji-unity-utilities.git"
+    "com.fuji97.fuji-unity-utilities": "https://github.com/fuji97/fuji-unity-utilities.git",
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+    "com.demigiant.dotween": "https://github.com/yoshida190/dotween"
   }
-}
-```
-
-### Tests
-
-The package can optionally be set as *testable*.
-In practice this means that tests in the package will be visible in the [Unity Test Runner](https://docs.unity3d.com/2017.4/Documentation/Manual/testing-editortestsrunner.html).
-
-Open `Packages/manifest.json` with your favorite text editor. Add following line **after** the dependencies block:
-```json
-{
-  "dependencies": {
-  },
-  "testables": [ "com.fuji97.fuji-unity-utilities" ]
 }
 ```
 
@@ -87,4 +79,4 @@ Open `Packages/manifest.json` with your favorite text editor. Add following line
 
 MIT License
 
-Copyright © 2022 Federico Rapetti
+Copyright © 2022 Federico Rapetti (fuji97)
